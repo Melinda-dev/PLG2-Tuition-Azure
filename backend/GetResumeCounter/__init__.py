@@ -9,11 +9,16 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
     
     try:
+        headers = {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
+        'Access-Control-Allow-Headers': 'Content-Type',
+          }    
     
         # Connect to Azure Cosmos DB        
         
         endpoint = 'https://tuition-school.documents.azure.com:443'
-        key = 'uwxIK4Ijs13Xz17QPTpTydYJrRosquHmhL9pLbeEjZlj5ho9vYxH2hnq5FjCOVllQM6eNBr7SI9jACDbMY6ZzQ=='
+        key = '9947ChQSPP8FGF5jnLQS2DTnzBhpd6v1xDunFfxBgVm1L1kRYFQrczuPUgrf1Uzb2QFcVT0m8vthACDbAL1WXw=='
         client = CosmosClient(endpoint, key)
 
         database_name = 'tuitionschool'
@@ -39,7 +44,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         json_to_return = json.dumps(counter_document)
 
         # Create and return HTTP response
-        return HttpResponse(body=json_to_return, status_code=200, mimetype="application/json")
+        return HttpResponse(body=json_to_return, status_code=200, mimetype="application/json",headers=headers)
+        
     
     except Exception as e:
         logging.error(f'An error occurred: {str(e)}')
