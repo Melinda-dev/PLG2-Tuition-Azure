@@ -1,7 +1,13 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "",
-    "FUNCTIONS_WORKER_RUNTIME": "python"
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=plg2schoolpagevisi122255;AccountKey=9JA+IBrEB8io3s2hrEnxLtogekjD8nxuP6ExWzmp3t/j5rErkG80E9yXFFDzvpmxqvovA/SzfiCM+ASt/UMmjQ==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=plg2schoolpagevisi122255;AccountKey=9JA+IBrEB8io3s2hrEnxLtogekjD8nxuP6ExWzmp3t/j5rErkG80E9yXFFDzvpmxqvovA/SzfiCM+ASt/UMmjQ==;EndpointSuffix=core.windows.net",
+    "WEBSITE_CONTENTSHARE": "plg2schoolpagevisitcountb40c32",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "5b581815-cf33-4352-aac8-b51aadcef3bf",
+    "PLG2TuitionSchool": "AccountEndpoint=https://tuition-school.documents.azure.com:443/;AccountKey=9947ChQSPP8FGF5jnLQS2DTnzBhpd6v1xDunFfxBgVm1L1kRYFQrczuPUgrf1Uzb2QFcVT0m8vthACDbAL1WXw==",
+    "CosmosDbConnectionString": "AccountEndpoint=https://tuition-school.documents.azure.com:443/;AccountKey=9947ChQSPP8FGF5jnLQS2DTnzBhpd6v1xDunFfxBgVm1L1kRYFQrczuPUgrf1Uzb2QFcVT0m8vthACDbAL1WXw=="
   }
 }

@@ -15,6 +15,25 @@
       "type": "http",
       "direction": "out",
       "name": "$return"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputDocument",
+      "databaseName": "tuitionschool",
+      "collectionName": "counter",
+      "createIfNotExists": false,
+      "connectionStringSetting": "CosmosDbConnectionString"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputDocument",
+      "databaseName": "tuitionschool",
+      "collectionName": "counter",
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "id": "1",
+      "PartitionKey": "1"
     }
   ]
 }

@@ -7,15 +7,15 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
 })
 //TODO: insert the link
-//const functionApiUrl = 'https://tuition-school.documents.azure.com:443';
+const functionApiUrl = '';
 //const localFunctionApi = 'http://localhost:7071/api/GetResumeCounter';
-const functionApiUrl = 'http://127.0.0.1:7071/api/GetResumeCounter';
-/*
+
+
+//const functionApiUrl = 'http://localhost:7071/api/GetResumeCounter';
 
 const testfunc = () =>{
     document.getElementById("counter").innerText = "1000";
 }
-*/
 
 const getVisitCount = () => {
  /*   
