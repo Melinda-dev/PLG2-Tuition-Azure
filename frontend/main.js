@@ -7,16 +7,17 @@ window.addEventListener('DOMContentLoaded', (event) =>{
     getVisitCount();
 })
 //TODO: insert the link
-const functionApiUrl = '';
+//const functionApiUrl = '';
 //const localFunctionApi = 'http://localhost:7071/api/GetResumeCounter';
 
 
-//const functionApiUrl = 'http://localhost:7071/api/GetResumeCounter';
+const functionApiUrl = 'https://plg2visitcount.azurewebsites.net/api/GetResumeCounter?code=lqY5nd58EMlWQbO8NxO8di9RSEBMwMDGRAoUcnOfnnUuAzFuklDYVA==';
 
+/*
 const testfunc = () =>{
     document.getElementById("counter").innerText = "1000";
 }
-
+*/
 const getVisitCount = () => {
  /*   
     let response = fetch(functionApiUrl);
